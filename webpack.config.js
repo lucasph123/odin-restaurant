@@ -5,11 +5,12 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    print: './src/print.js',
+    
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Output Management',
+      title: 'Odin Restaurant',
+      template : 'src/index.html'
     }),
   ],
   devtool: 'inline-source-map',
@@ -23,5 +24,14 @@ module.exports = {
   },
   optimization: {
     runtimeChunk: 'single',
+  },
+
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
 };

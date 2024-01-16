@@ -1,0 +1,60 @@
+@font-face {
+
+    font-family: 'restaurant';
+    src: url('fonts/Lemon-Regular.ttf');
+
+}
+body,
+html
+{
+    display: flex;
+    background-color: grey;
+
+    justify-content: center;
+    margin: 0; 
+    height: 100vh;
+    width: 100%;
+    
+    
+}
+
+
+.nav-bar
+{
+background-color: bisque;
+width: 40em;
+height: 10em;
+display: flex;
+align-items: center;
+justify-content:space-evenly;
+border-bottom: 1px solid black;
+}
+
+.btn
+{
+    border: 1px black solid;
+    width: 7em;
+    height: 80%;
+}
+
+.btn:active
+{
+    background-color: black;
+}
+
+.menu
+{
+    background-color: bisque;
+    width: 40em;
+    height: calc(100vh - 10em - 1px);
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.title
+{
+    font-size: 4em;
+    font-family: 'restaurant';
+
+}
