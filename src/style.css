@@ -4,8 +4,8 @@
     src: url('fonts/Lemon-Regular.ttf');
 
 }
-body,
-html
+body
+
 {
     display: flex;
     background-color: grey;
@@ -23,7 +23,7 @@ html
 {
 background-color: bisque;
 width: 40em;
-height: 10em;
+height: 8em;
 display: flex;
 align-items: center;
 justify-content:space-evenly;
@@ -32,29 +32,81 @@ border-bottom: 1px solid black;
 
 .btn
 {
-    border: 1px black solid;
+    font-family: restaurant, 'Times New Roman', Times, serif;
+    text-shadow: 4px 4px grey ;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 7em;
     height: 80%;
+}
+.btn:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .btn:active
 {
-    background-color: black;
+    position: relative;
+    top: 2px;
+    text-shadow: 2px 2px grey;
 }
 
 .menu
 {
     background-color: bisque;
     width: 40em;
-    height: calc(100vh - 10em - 1px);
+    min-height: calc(100vh - 10em - 1px); ;
+    height: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 2em;
 }
 
 .title
 {
     font-size: 4em;
-    font-family: 'restaurant';
+    font-family: restaurant, 'Times New Roman', Times, serif;
 
+}
+
+.index-desc
+{
+    padding: 2em;
+    font-size: 2em;
+    font-weight: 100;
+    font-family:'Times New Roman', Times, serif;
+    text-align: justify;
+
+}
+
+.product-container{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.product-desc
+{
+    padding: 10px;
+    font-size: 2em;
+}
+
+.product-price
+{
+    font-family: restaurant, 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+.product-img
+{
+    height: 13em;
+    width: 25em;
 }
