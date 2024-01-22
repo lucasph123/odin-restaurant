@@ -153,3 +153,18 @@ border-bottom: 1px solid black;
 }
 
 
+.contact-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: double 20px rgb(80, 32, 0);
+    padding: 0.5em;
+  
+}
+
+.contact-desc
+{
+    font-size: 2em;
+}
