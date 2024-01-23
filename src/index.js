@@ -34,10 +34,10 @@ function navBar(main) {
         main.appendChild(navBar);
 
 
-
-    firstButton.addEventListener('click', function () { createHome() });
-    secondButton.addEventListener('click', function () { createMenu() });
-    thirdButton.addEventListener('click', function () { createContact() });
+    firstButton.addEventListener('click', function () { createHome(firstButton,secondButton,thirdButton) });
+    secondButton.addEventListener('click', function () { createMenu(firstButton,secondButton,thirdButton) });
+    thirdButton.addEventListener('click', function () { createContact(firstButton,secondButton,thirdButton) });
+    
 
 }
 

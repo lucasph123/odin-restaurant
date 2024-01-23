@@ -1,10 +1,10 @@
 import './style.css';
 
 
-function createContact()
+function createContact(first,second,third)
 {
-    
-    const contact = document.createElement('div')
+    buttonFix(first,second,third);
+    const contact = document.createElement('div');
     const main = document.querySelector('#container');
     contact.classList.add('menu')
     main.removeChild(main.lastChild);
@@ -13,6 +13,13 @@ function createContact()
     displayContact(contact);
     return contact;
 
+}
+
+function buttonFix(first,second,third)
+{
+    first.className = 'btn';
+    second.className = 'btn';
+    third.className = 'active';
 }
 
 function displayContact(contact)

@@ -1,7 +1,7 @@
-function createHome()
+function createHome(first,second,third)
 {
-    
-    const home = document.createElement('div')
+    buttonFix(first,second,third);
+    const home = document.createElement('div');
     const main = document.querySelector('#container');
     home.classList.add('menu')
     main.removeChild(main.lastChild);
@@ -12,6 +12,14 @@ function createHome()
 
     return home;
 
+}
+
+function buttonFix(first,second,third)
+{
+
+    first.className = 'active';
+    second.className = 'btn';
+    third.className = 'btn';
 }
 
 function displayDescription(home)

@@ -3,10 +3,11 @@ import pizza from './imgs/pizza.png';
 import hamburguer from './imgs/hamburguer.png';
 import ramen from './imgs/ramen.png';
 
-function createMenu()
+function createMenu(first,second,third)
 {
     
-    const menu = document.createElement('div')
+    buttonFix(first,second,third);
+    const menu = document.createElement('div');
     const main = document.querySelector('#container');
     menu.classList.add('menu')
     main.removeChild(main.lastChild);
@@ -17,6 +18,15 @@ function createMenu()
   
     return menu;
 
+}
+
+
+function buttonFix(first,second,third)
+{
+    first.className = 'btn';
+    second.className = 'active';
+    third.className = 'btn';
+    
 }
 
 function displayProducts(menu)

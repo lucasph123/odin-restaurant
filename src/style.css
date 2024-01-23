@@ -52,8 +52,26 @@ border-bottom: 1px solid black;
 
 .btn:active
 {
+   
+
     position: relative;
     top: 2px;
+    text-shadow: 2px 2px grey;
+}
+
+.active{
+    font-family: restaurant, 'Times New Roman', Times, serif;
+    text-shadow: 4px 4px grey ;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5em;
+    height: 40%;
+    text-decoration: underline;
+    background-color: brown;
+    border-radius: 10em;
+    pointer-events: none;
     text-shadow: 2px 2px grey;
 }
 
